@@ -46,6 +46,7 @@ label{
 /*--logo--*/
 .logo {
   float: left;
+  align-content: left;
 }
 .logo  a{
  display:block;
@@ -54,7 +55,6 @@ label{
     font-size: 2em;
     font-weight: 700;
     color: #fff;
-    background: #CCDDCC;
     padding: 0.2em 0.5em;
 }
 .logo  a h1:hover{
