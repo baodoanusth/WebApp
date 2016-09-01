@@ -82,13 +82,36 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--head-bottom-->
 </div>
 <!-- banner -->
-<div class="banner">
+<div class="banner w3-animate-right" style="background: url(images/banner.jpg); background-repeat: no-repeat; background-size:cover; width: 100%">
 	<div class="container">
 		<h2>Call for internship 2016 (HealthOmics)</h2>
 		<p>The project Omics data analysis for human health and diseases in Vietnam (HealthOmics) is open for two interns, who may be in their second or third-year at ICT department, USTH.</p>
 		<a href="indexPost/post0.html">READ ARTICLE</a>
 	</div>
 </div>
+<div class="banner w3-animate-right" style="background: url(images/usth.jpg); background-repeat: no-repeat; background-size:cover; width: 100%">
+	<div class="container">
+		<h2 style="color: black">Call for internship 2016 (HealthOmics)</h2>
+		<p style="color: black">The project Omics data analysis for human health and diseases in Vietnam (HealthOmics) is open for two interns, who may be in their second or third-year at ICT department, USTH.</p>
+		<a href="indexPost/post0.html" style="color: black">READ ARTICLE</a>
+	</div>
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("banner");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2500);    
+}
+</script>
 <!-- technology -->
 <div class="technology">
 	<div class="container">
